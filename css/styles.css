@@ -20,7 +20,7 @@ font-size: 14px;
 
 /* Оформление логотипов */
 .logo{
-   color: var(--accent-color);
+   color: var(--black-color);
 
    font-family: Raleway,sans-serif;
    font-size: 26px;
@@ -28,10 +28,10 @@ font-size: 14px;
    font-weight: 700;
 }
 
-.logo .header{
-   color:var(--black-color);
+.accent{
+   color:var(--accent-color);
 }
-.logo .footer{
+.footer .logo{
    color: var(--white-color);
 }
 
@@ -74,7 +74,7 @@ font-size: 14px;
 .list{
    list-style: none;
 }
-.decor-none{
+.link{
    text-decoration: none;
 }
 
@@ -136,10 +136,11 @@ color: var(--accent-color);
 
 /* Section Чем мы занимаемся*/
 .section-title{
+      color: var(--title-text-color);
+
       font-size: 36px;
       line-height: 1.16;
       text-align: center;
-      text-transform: none;
    }
 
 /* Section team */
