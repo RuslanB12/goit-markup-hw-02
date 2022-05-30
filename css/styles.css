@@ -19,27 +19,19 @@ font-size: 14px;
 }
 
 /* Оформление логотипов */
-.logo-full{
+.logo{
    color: var(--accent-color);
 
    font-family: Raleway,sans-serif;
    font-size: 26px;
    line-height: 1.19;
    font-weight: 700;
-   text-decoration: none;
 }
-.logo-full:hover,
-.logo-full:focus{
-   color: var(--white-color)
-}
-.logo-full:hover,
-.logo-full:focus {
-   background-color: var(--accent-color)
-}
-.logo-header{
+
+.logo .header{
    color:var(--black-color);
 }
-.logo-footer{
+.logo .footer{
    color: var(--white-color);
 }
 
@@ -69,15 +61,21 @@ font-size: 14px;
 
 .button:hover,
 .button:focus{
-   color: var(--white-color)
+   color: var(--white-color);
+   background-color: var(--accent-color);
 }
-.button:hover,
-.button:focus {
-   background-color: var(--accent-color)
+
+.button.active {
+   background-color: var(--accent-color);
+   color: var(--white-color);
 }
-/* Cброс точек */
+
+/* Cброс точек и подчеркиваний ссылок*/
 .list{
    list-style: none;
+}
+.decor-none{
+   text-decoration: none;
 }
 
 /* Header  Site nav*/
@@ -89,16 +87,18 @@ font-size: 14px;
 .site-nav .link:focus{
 color: var(--accent-color);
 }
+
 .site-nav .link,
 .auth-nav .link{
    font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
-   text-decoration: none;
 }
+
 .site-nav .link.current{
    color: var(--accent-color);
 }
+
 /* Auth-nav */
 .auth-nav .link{
    color:var(--primary-text-color);
@@ -135,8 +135,7 @@ color: var(--accent-color);
 }
 
 /* Section Чем мы занимаемся*/
-.section .features-title,
-.section-team .features-title{
+.section-title{
       font-size: 36px;
       line-height: 1.16;
       text-align: center;
@@ -171,19 +170,11 @@ footer{
 
 }
 .location{
-   text-decoration: none;
-
    color: var(--white-color);
-}
-.location:focus,
-.location:hover {
-   color: var(--accent-color);
 }
 
 .contacts, .telephone {
    color: var(--link-color);
-
-   text-decoration: none;
 }
 
 .telephone:focus,
@@ -209,8 +200,5 @@ footer{
 
    font-size: 16px;
    line-height: 1.87;
-}
-.page .link{
-   text-decoration: none;
 }
 
